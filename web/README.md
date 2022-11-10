@@ -12,7 +12,7 @@ bash cv.sh # as needed
 ### deployment
 
 ```bash
-# TBD
+bash deploy.sh
 ```
 
 ## PDF
