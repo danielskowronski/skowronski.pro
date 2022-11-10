@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Daniel Skowroński</title>
+</head>
+<body>
+
+<style type="text/css">
+  :root {
+    --color-ds: #2E3E80;
+    --color-ds-dark: #171F40;
+  }
+
+  /* print -------------------------------------------- */
+
+  @page { 
+    margin: 10mm;
+    size: A4;
+  }
+
+  html, body {
+    margin: 0mm;
+  }
+
+  .pageSection {
+    page-break-inside: avoid;
+  }
+
+  /* typography ---------------------------------------- */
+
+  html, body { 
+    font-family: "Ubuntu Condensed", sans-serif;
+    text-align: justify; /* left */
+    text-justify: inter-word;
+    font-size:  14px;
+  } 
+
+  pre, kbd, code {
+    font-family: "Ubuntu Mono", monospace;
+  }
+
+  h1, h2, h3, #contact, #links {
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  /*
+  h1 { font-size:  1.750em; }
+  h2 { font-size:  1.250em; }
+  h3 { font-size:  1.375em; }
+  */
+
+  ul, ol {
+    margin-block-start: 0.0em;
+    margin-block-end:   0.0em;
+  }
+
+  h1, h2, h3, h4, h5, h6, p {
+    margin-block-start: 0.25em;
+    margin-block-end:   0.25em;
+  }
+
+  ul {
+    padding-inline-start: 0.5em;
+    padding-inline-start: 0.5em;
+  }
+
+  li::marker {
+    content: "■ ";
+    color: var(--color-ds-dark);
+  }
+
+  li {
+    margin-left:  0.5em;
+  }
+
+  hr {
+    border-top:    0.25em solid var(--color-ds-dark);
+    border-bottom: none;
+    border-left:   none;
+    border-right:  none;
+
+    margin-top:    1.0em;
+    margin-bottom: 0.0em;
+  }
+
+  a {
+    color: var(--color-ds-dark);
+  }
+
+  /* hacks --------------------------------------------- */
+
+  .anchor, span.absolute { 
+    /* hacks needed to embed .Page.Content correectly */ 
+    display:  none;
+  }
+
+  /* section-specific ---------------------------------- */
+
+  #title {
+    background: var(--color-ds);
+    color:      white;
+
+    text-align: center;
+
+    padding-top:    0.25em;
+    padding-bottom: 0.25em;
+  
+    margin-block-start: 0.00em;
+    margin-block-end:   0.00em;
+  }
+
+  td {
+    vertical-align: top;
+  }
+
+  .smallSeparator{
+    height:  0.25em;
+  }
+
+  .pe-header-line1 {
+    font-size: 16px;
+  }
+  .pe-header-line2 {
+    font-size: 12px;
+  }
+
+  .pe-content, .ps-content {
+    padding-left: 0 ; /*0.25em;*/
+  }
+
+  .pe-nonpro-true {
+    /* removing entries related to freelance and volunteering */
+    display: none; 
+  }
+
+  #gdpr {
+    font-size: x-small;
+  }
+
+</style>
+
+<h1 id="title">Daniel Skowroński </h1>
+
+<table style="width:100%">
+  <tr>
+    <td style="width:50%">
+      <div class="pageSection" id="contact">
+        {{ with .Site.GetPage "/cv-partials/contact.md" }}{{ .Content }}{{ end }}
+      </div>
+    </td>
+    <td style="width:50%">
+      <div class="pageSection" id="links">
+        {{ with .Site.GetPage "/cv-partials/links.md" }}{{ .Content }}{{ end }}
+      </div>
+    </td>
+  </tr>
+</table>
+
+<hr />
+
+<div class="pageSection" id="intro">
+  <h2>Intro</h2>
+
+  <div class="ps-content">
+    {{ with .Site.GetPage "/cv-partials/intro.md" }}{{ .Content }}{{ end }}
+  </div>
+</div>
+
+<div class="smallSeparator"></div>
+
+<div class="pageSection">
+  <div class="ps-content">
+    {{ with .Site.GetPage "/cv-partials/advantages.md" }}{{ .Content }}{{ end }}
+  </div>
+</div>
+
+<hr />
+
+<h2>Professional experience</h2>
+
+{{ range sort (where .Site.RegularPages "Section" "professional-experience") ".File.BaseFileName" "desc" }}
+<div class="pageSection pe-nonpro-{{ .Params.nonpro }}" id="pe-{{ .File.BaseFileName }}">
+  <h3 class="pe-header">
+    <span class="pe-header-line1">
+      <span class="pe-position">{{ .Params.position }}</span>,
+      <span class="pe-team">{{ .Params.team }}</span>,
+      <span class="pe-company">{{ .Params.company }}</span>
+    </span>
+    <br />
+    <span class="pe-header-line2">
+      <span class="pe-dates">{{ .Params.start }} - {{ .Params.end }}</span> | 
+      <span class="pe-location">{{ .Params.location }}</span>
+    </span>
+  </h3>
+  <div class="pe-content">
+    {{ .Content }}
+  </div>
+</div>
+{{ end }}
+
+<hr />
+
+<div class="pageSection" id="skills">
+  <h2>Skills and technologies</h2>
+
+  <div class="ps-content">
+    {{ with .Site.GetPage "/cv-partials/skills.md" }}{{ .Content }}{{ end }}
+  </div>
+</div>
+
+<hr />
+
+<div class="pageSection" id="gdpr">
+  <h2>GDPR</h2>
+
+  <div class="ps-content">
+    {{ with .Site.GetPage "/cv-partials/gdpr.md" }}{{ .Content }}{{ end }}
+  </div>
+</div>
+
+</body>
+</html>
