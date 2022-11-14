@@ -10,5 +10,5 @@ hidden: true
 - Github:
     - [github.com/danielskowronski](https://github.com/danielskowronski)
     - [github.com/skowronski-cloud](https://github.com/skowronski-cloud)
-- tech blog: [blog.dsinf.net](https://blog.dsinf.net)
+- tech blog: [skowronski.tech](https://skowronski.tech)
 - LinkedIn: [/in/daniel-skowronski](https://linkedin.com/in/daniel-skowronski)
