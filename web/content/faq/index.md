@@ -15,4 +15,4 @@ My contact details are listed on the [Contact](/contact/) page. This article ans
 - Screening quizzes/tests and "homework" assignments are good. Lack of proper technical verification and wasted time are awful.
 - Different companies have different job titles. I don't care if I'm hired as "junior engineer" after working as "senior engineer" in previous company, as long as I'm growing and money is good.
 - Different companies have different approaches to various parts of IT, especially when comparing startup with corporation. Please don't assume my experience with technology X means I know everything about all related components.
-- My notice period is standard on employment contract for my working period (as visible on [Professional experience](/professional-experience/) page).
+- My notice period is standard on employment contract for my working period (as visible on [Professional experience](/professional-experience/) page). As of November 2022 it is **1 month**.
