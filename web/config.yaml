@@ -1,5 +1,5 @@
 ---
-title: "[skowronski.pro - professional homepage]"
+title: "[skowronski.pro] professional homepage"
 
 baseURL: "https://skowronski.pro/"
 
@@ -46,7 +46,7 @@ deployment:
 author:
   name: "Daniel Skowroński"
   image: "img/memoji.jpg"
-  headline: "[skowronski.pro - professional homepage]"
+  headline: "[skowronski.pro] professional homepage"
   links:
     - github: "https://github.com/danielskowronski/"
     - linkedin: "https://linkedin.com/in/daniel-skowronski/"
