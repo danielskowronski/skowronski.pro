@@ -7,8 +7,8 @@ team: DIMETRA Platform
 company: Motorola Solutions Systems
 location: Kraków, Poland
 
-start: May 2019
-end: October 2019
+start: 2019-05-01
+end: 2019-09-30
 
 ---
 

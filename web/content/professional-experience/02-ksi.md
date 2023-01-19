@@ -7,8 +7,8 @@ team: Computer Science Students’ Association - KSI
 company: Jagiellonian University in Kraków
 location: Kraków, Poland
 
-start: December 2014
-end: January 2018
+start: 2014-12-01
+end: 2017-12-31
 
 nonpro: true
 

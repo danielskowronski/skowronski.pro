@@ -7,8 +7,8 @@ team: Infrastructure & Cloud Tooling Team
 company: Grand Parade part of William Hill
 location: Kraków, Poland
 
-start: February 2021
-end: September 2022
+start: 2021-02-01
+end: 2022-09-19
 
 ---
 

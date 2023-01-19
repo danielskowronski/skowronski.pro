@@ -7,8 +7,8 @@ team: Big Data
 company: Grand Parade part of William Hill
 location: Kraków, Poland
 
-start: July 2020
-end: February 2021
+start: 2020-07-01
+end: 2021-01-31
 
 ---
 

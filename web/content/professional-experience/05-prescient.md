@@ -7,8 +7,8 @@ team: IT Department
 company: Prescient Co
 location: Kraków, Poland
 
-start: October 2019
-end: July 2020
+start: 2019-10-01
+end: 2020-06-30
 
 ---
 

@@ -7,8 +7,8 @@ team: Network Operations Command Center
 company: Akamai Technologies
 location: Kraków, Poland
 
-start: July 2016
-end: May 2019
+start: 2016-07-01
+end: 2019-04-30
 
 ---
 

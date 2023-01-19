@@ -7,8 +7,8 @@ team: DevOps Tooling Team
 company: Grand Parade part of William Hill
 location: Kraków, Poland
 
-start: September 2022
-end: ongoing
+start: 2022-09-20
+end: 2022-12-31
 
 ---
 
