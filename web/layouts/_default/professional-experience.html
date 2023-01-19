@@ -10,7 +10,7 @@
 				{{ range sort (where .Site.RegularPages "Section" "professional-experience") ".File.BaseFileName" "desc" }}
 				<li>
 					<a href="{{ .Permalink }}">
-						{{ .Params.position }}, {{ .Params.company }}
+						[{{ .Params.start }} - {{ .Params.end }}]<br />{{ .Params.position }}, {{ .Params.company }}
 					</a>
 				</li>
 				{{ end }}
