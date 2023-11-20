@@ -6,7 +6,7 @@ hidden: true
 
 ### Contact
 
-- pronouns: he/him
+- pronouns: they/them, he/him
 - **e-mail: [daniel@skowron.ski](mailto:daniel@skowron.ski)**
 - phone: it is not a preferred initial method of contact
 - languages:
